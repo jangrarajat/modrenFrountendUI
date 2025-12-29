@@ -29,7 +29,7 @@ function Home() {
         {/* part 1 */}
         <div
           id='hero'
-          className='w-full h-[150vh] mt-12 bg-cover flex flex-col '
+          className='w-full h-[100vh] mt-12 bg-cover flex flex-col '
           style={{ backgroundImage: "url('https://images.pexels.com/photos/5862400/pexels-photo-5862400.jpeg')" }}
         >
 
@@ -60,31 +60,18 @@ function Home() {
 
               {/* Content Section */}
               <div className="text-gray-800 leading-relaxed text-lg font-serif">
-                <p>
-                  <span className="font-bold">Since 2013,</span> Modern Molecule has been at the forefront of offering specialized services in Bid Management, Capture Management, Proposal Writing, and Grant Development, targeting the Federal and State, Local, and Education (SLED) sectors. In addition, we provide a broad range of IT services, ensuring that our clients can secure contracts with government agencies effectively.
+                <p className='text-xs md:text-xl'>
+                  <span className=" font-bold">Since 2013,</span> Modern Molecule has been at the forefront of offering specialized services in Bid Management, Capture Management, Proposal Writing, and Grant Development, targeting the Federal and State, Local, and Education (SLED) sectors. In addition, we provide a broad range of IT services, ensuring that our clients can secure contracts with government agencies effectively.
                 </p>
-                <br />
-                <p>
-                  Our team is composed of highly skilled Proposal Writers, IT Experts, Capture Managers, Grant Writers, and Graphic Artists, enabling us to provide a comprehensive array of services internally. Dedicated to delivering outstanding service, Modern Molecule operates around the clock, offering 24/7 availability.
-                </p>
+              
+              
               </div>
 
               {/* Bottom Rivets */}
               <div className="absolute bottom-2 left-2 w-3 h-3 rounded-full bg-gray-400 border border-gray-600 shadow-inner"></div>
               <div className="absolute bottom-2 right-2 w-3 h-3 rounded-full bg-gray-400 border border-gray-600 shadow-inner"></div>
 
-              {/* Action Buttons Section */}
-              <div className="absolute -bottom-6 right-0 flex items-stretch h-12 shadow-lg">
-                {/* Plus Button */}
-                <button className="bg-black text-white px-4 flex items-center justify-center hover:bg-[#5a2d2d] transition-colors">
-                  <span className="text-xl">+</span>
-                </button>
-
-                {/* Find Out More Button */}
-                <button className="bg-[#5a2d2d] text-white px-8 flex items-center justify-center text-sm font-semibold uppercase tracking-wider hover:bg-black transition-colors">
-                  Find out more
-                </button>
-              </div>
+             
             </div>
 
           </div>
@@ -109,7 +96,7 @@ function Home() {
 
                 {/* Content Section */}
                 <div className="text-gray-800 leading-relaxed text-lg font-serif">
-                  <p>
+                  <p className='text-xs md:text-xl'>
                     <span className="font-bold">{s.servicesName}</span><br />
                     {s.servicesDietals}
                   </p>
@@ -135,7 +122,7 @@ function Home() {
         <div className='w-full h-fit '>
           <div className='md:p-52 p-5 '>
             <h1 className='text-center text-3xl font-serif '>Workplace Culture</h1>
-            <p className='font-serif text-justify'>We understand that workplace discrimination is an issue that can affect workplace productivity and employee health. Being an equal opportunity employer, we recruit, train, pay, and promote employees fairly and equally regardless of race, gender, ethnicity, age, or physical status. Equal Employment Opportunity is fair treatment in employment, promotion, training, and other personnel actions without regard to race, color, religion, sex (which includes gender, sexual harassment, and pregnancy), age, national origin, reprisal (for prior EEO activity), physical or mental disability, genetic information, status as a parent, and sexual orientation. Our equal employment opportunity policy is the pillar of a healthy and productive workplace. Everyone feels supported and valued to work productively so we are invested in treating everyone with respect and consideration.​ Our equal opportunity employer policy applies to all employees, job candidates, contractors, stakeholders, partners, and visitors. Equal opportunity is for everyone, but it mainly concerns members of underrepresented groups – they’re the ones who are traditionally disadvantaged in the workplace. We don’t guarantee employment or promotions for people in those groups, but we will treat them fairly and avoid discriminating against them either via conscious or unconscious biases.</p>
+            <p className='font-serif text-justify text-xs md:text-xl mt-5'>We understand that workplace discrimination is an issue that can affect workplace productivity and employee health. Being an equal opportunity employer, we recruit, train, pay, and promote employees fairly and equally regardless of race, gender, ethnicity, age, or physical status. Equal Employment Opportunity is fair treatment in employment, promotion, training, and other personnel actions without regard to race, color, religion, sex (which includes gender, sexual harassment, and pregnancy), age, national origin, reprisal (for prior EEO activity), physical or mental disability, genetic information, status as a parent, and sexual orientation. Our equal employment opportunity policy is the pillar of a healthy and productive workplace. Everyone feels supported and valued to work productively so we are invested in treating everyone with respect and consideration.​ Our equal opportunity employer policy applies to all employees, job candidates, contractors, stakeholders, partners, and visitors. Equal opportunity is for everyone, but it mainly concerns members of underrepresented groups – they’re the ones who are traditionally disadvantaged in the workplace. We don’t guarantee employment or promotions for people in those groups, but we will treat them fairly and avoid discriminating against them either via conscious or unconscious biases.</p>
           </div>
         </div>
 
