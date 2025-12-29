@@ -83,7 +83,7 @@ function Home() {
 
           {
             services.map((s, index) => (
-              <div className="  relative cursor-pointer hover:scale-105 duration-300    rounded  md:max-w-1xs h-3/3 bg-[#e5e5e5] shadow-2xl border border-gray-300 p-8 md:p-12"
+              <div className="  relative cursor-pointer md:hover:scale-105 duration-300    rounded  md:max-w-1xs h-3/3 bg-[#e5e5e5] shadow-2xl border border-gray-300 p-8 md:p-12"
                 key={s.servicesName || index}
               >
 
