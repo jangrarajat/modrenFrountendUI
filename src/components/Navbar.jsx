@@ -5,8 +5,11 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
+
+
+
   const controlNavbar = () => {
-    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+    if (window.scrollY > lastScrollY && window.scrollY > 200) {
       // Niche scroll - Hide (Opacity 0)
       setIsVisible(false);
     } else {
@@ -46,10 +49,10 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className={`px-6 py-4 text-sm font-bold uppercase tracking-tight cursor-pointer hover:bg-[#333333] hover:text-white  last:border-r-0 transition-colors
+              className={`px-6 py-4 text-sm font-bold uppercase tracking-tight cursor-pointer hover:bg-black hover:text-white   transition-colors
                 ${item.active
                   ? 'bg-[#333333] text-white'
-                  : 'text-black hover:bg-gray-200 bg-gray-200'
+                  : 'text-black hover:bg-black bg-gray-200'
                 }`}
             >
               {item.name}

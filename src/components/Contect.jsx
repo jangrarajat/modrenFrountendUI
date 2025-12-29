@@ -17,7 +17,7 @@ function Contect() {
                 <label htmlFor="message" className='text-2xl mt-3 mb-1'>Message</label>
                 <textarea type="text" name="message" id="message" required
                     placeholder="Apna message yahan likhein..."
-                    class="w-full h-48 border border-gray-500 p-3 block focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full h-48 border border-gray-500 p-3 block focus:outline-none focus:ring-2 focus:ring-blue-500"
                 ></textarea>
 
 

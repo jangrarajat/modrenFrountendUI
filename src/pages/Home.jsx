@@ -1,8 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Contect from '../components/Contect'
+import Footer from '../components/Footer'
+
 
 function Home() {
+
+ 
 
   const services = [
     { servicesName: "Bid Management", servicesDietals: "Bid Management services & Capture Management with special emphasis in the Federal, State and local government sectors.", link: "#" },
@@ -19,7 +23,7 @@ function Home() {
 
   return (
     <>
-      <div className="min-h-[200vh] bg-gray-100 pt-20">
+      <div className=" min-h-[200vh] bg-gray-100 pt-20" >
         <Navbar />
 
         {/* part 1 */}
@@ -40,6 +44,8 @@ function Home() {
               </p>
             </div>
           </div>
+
+
           <div className='w-full h-[60%] flex justify-center items-center'>
 
             {/* Main Card Container */}
@@ -86,11 +92,13 @@ function Home() {
         </div>
         {/* part 2 */}
 
-        <div className='w-full min-h-[80vh] my-10 grid  md:grid-flow-row md:grid-cols-3 gap-4 md:p-44'>
+        <div className='w-full min-h-fit my-20 grid md:grid-flow-row md:grid-cols-3 gap-4 md:p-44'>
 
           {
-            services.map((s, i) => (<>
-              <div key={i} className="  relative cursor-pointer hover:scale-105 duration-300    rounded  md:max-w-1xs h-3/3 bg-[#e5e5e5] shadow-2xl border border-gray-300 p-8 md:p-12">
+            services.map((s, index) => (
+              <div className="  relative cursor-pointer hover:scale-105 duration-300    rounded  md:max-w-1xs h-3/3 bg-[#e5e5e5] shadow-2xl border border-gray-300 p-8 md:p-12"
+                key={s.servicesName || index}
+              >
 
                 {/* Top Rivets/Nuts (Corner circles) */}
                 <div className="absolute top-2 left-2 w-3 h-3 rounded-full bg-gray-400 border border-gray-600 shadow-inner"></div>
@@ -108,14 +116,15 @@ function Home() {
                   <br />
 
                 </div>
-
+                 
+                
                 {/* Bottom Rivets */}
                 <div className="absolute bottom-2 left-2 w-3 h-3 rounded-full bg-gray-400 border border-gray-600 shadow-inner"></div>
                 <div className="absolute bottom-2 right-2 w-3 h-3 rounded-full bg-gray-400 border border-gray-600 shadow-inner"></div>
 
 
               </div>
-            </>))
+            ))
           }
 
 
@@ -126,7 +135,7 @@ function Home() {
         <div className='w-full h-fit '>
           <div className='md:p-52 p-5 '>
             <h1 className='text-center text-3xl font-serif '>Workplace Culture</h1>
-            <p className='font-serif'>We understand that workplace discrimination is an issue that can affect workplace productivity and employee health. Being an equal opportunity employer, we recruit, train, pay, and promote employees fairly and equally regardless of race, gender, ethnicity, age, or physical status. Equal Employment Opportunity is fair treatment in employment, promotion, training, and other personnel actions without regard to race, color, religion, sex (which includes gender, sexual harassment, and pregnancy), age, national origin, reprisal (for prior EEO activity), physical or mental disability, genetic information, status as a parent, and sexual orientation. Our equal employment opportunity policy is the pillar of a healthy and productive workplace. Everyone feels supported and valued to work productively so we are invested in treating everyone with respect and consideration.​ Our equal opportunity employer policy applies to all employees, job candidates, contractors, stakeholders, partners, and visitors. Equal opportunity is for everyone, but it mainly concerns members of underrepresented groups – they’re the ones who are traditionally disadvantaged in the workplace. We don’t guarantee employment or promotions for people in those groups, but we will treat them fairly and avoid discriminating against them either via conscious or unconscious biases.</p>
+            <p className='font-serif text-justify'>We understand that workplace discrimination is an issue that can affect workplace productivity and employee health. Being an equal opportunity employer, we recruit, train, pay, and promote employees fairly and equally regardless of race, gender, ethnicity, age, or physical status. Equal Employment Opportunity is fair treatment in employment, promotion, training, and other personnel actions without regard to race, color, religion, sex (which includes gender, sexual harassment, and pregnancy), age, national origin, reprisal (for prior EEO activity), physical or mental disability, genetic information, status as a parent, and sexual orientation. Our equal employment opportunity policy is the pillar of a healthy and productive workplace. Everyone feels supported and valued to work productively so we are invested in treating everyone with respect and consideration.​ Our equal opportunity employer policy applies to all employees, job candidates, contractors, stakeholders, partners, and visitors. Equal opportunity is for everyone, but it mainly concerns members of underrepresented groups – they’re the ones who are traditionally disadvantaged in the workplace. We don’t guarantee employment or promotions for people in those groups, but we will treat them fairly and avoid discriminating against them either via conscious or unconscious biases.</p>
           </div>
         </div>
 
@@ -162,10 +171,11 @@ function Home() {
           </div>
         </div>
 
-       {/* Contect */}
+        {/* Contect */}
 
-       <Contect/>
+        <Contect />
 
+         <Footer/>
 
       </div>
     </>
